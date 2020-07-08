@@ -6,6 +6,7 @@ import {
 import CssBaseline from '@material-ui/core/CssBaseline'
 
 import store from 'src/reducers'
+import Hashbox from 'src/components/hashbox'
 
 
 const MainLayout = () => {
@@ -13,6 +14,7 @@ const MainLayout = () => {
     <Provider store={store}>
       <Router>
         <CssBaseline />
+        <Hashbox />
       </Router>
     </Provider>
   )
