@@ -25,5 +25,15 @@ Summary
 > Final cost:          0.00848086 ETH
 
 ```
+
 * Open the Ganache workspace and click on Contracts -> Click on "FileRegistry" (The name of deployed contract). Copy it's address and use it your front-end code.
 
+* Install front end dependencies and then run the code. Yarn was chosen, but the equivalent npm commands should work. Node 10 was chosen for development purposes
+```bash
+yarn install
+yarn run start
+```
+```bash
+npm install
+npm run start
+```
