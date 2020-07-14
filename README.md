@@ -4,7 +4,7 @@ Group project for 810 Blockchain course
 ### Deployment steps
 * Install Ganache (https://www.trufflesuite.com/ganache)
 * Install npm and nodejs (https://nodejs.org/en/)
-* Install truffle package through CLI 
+* Install truffle package through CLI
 ```bash
 $ npm install -g truffle
 ```
@@ -27,13 +27,9 @@ Summary
 ```
 
 * Open the Ganache workspace and click on Contracts -> Click on "FileRegistry" (The name of deployed contract). Copy it's address and use it your front-end code.
-
-* Install front end dependencies and then run the code. Yarn was chosen, but the equivalent npm commands should work. Node 10 was chosen for development purposes
+* Install the MetaMask plugin on your browser and setup a wallet. Switch to the local:8545 network and import your account from ganache
+* Next, start the front-end web appplication
 ```bash
-yarn install
-yarn run start
-```
-```bash
-npm install
-npm run start
+$ npm install
+$ npm start
 ```
