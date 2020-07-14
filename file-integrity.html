@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Decentralized file integrity</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="lib/sha256.min.js"></script>
+    <script src="js/file-integrity.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+</head>
+
+<style>
+#error-msg, #info-msg {display: none}
+#contractLink {display: inline}
+
+</style>
+
+<body>
+
+<main>
+
+
+    <h2 class="display-4" align="center">Decentralized File Integrity</h2>
+    <ul class="list-group">
+        <li align="center" class="list-group-item ">Contract address (on Ganache): <p href="#" id="contractLink"
+                                                                                      target="_blank"></p></li>
+        <li class="list-group-item"></li>
+    </ul>
+
+    <div id="error-msg" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div id="info-msg" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Info</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-4">
+                <div class="card-header text-center display-5">Submit a file</div>
+                <div class="card-body text-center">
+                    <p align="center">Content creaters can register (upload) new file to the File Registry</p>
+
+                    <input type="file" class="form-control-file" id="fileForUpload"/><br/>
+                    <input type="button" class="btn btn-primary" id="fileUploadButton" value="Submit"/>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-4">
+                <div class="card-header text-center display-5">Verify a file</div>
+                <div class="card-body text-center">
+                    <p align="center">Blockchain users can verify files by checking whether they exist in the File
+                        Registry</p>
+
+                    <input type="file" class="form-control-file" id="fileToVerify"/><br/>
+                    <input type="button" class="btn btn-primary" id="fileVerifyButton" value="Submit"/>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
+
+</body>
+</html>

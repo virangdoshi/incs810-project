@@ -1,0 +1,12 @@
+{
+  "name": "decentralized-file-integrity",
+  "version": "1.0.0",
+  "description": "Decentralized File Integrity project for NYIT - INCS 810",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

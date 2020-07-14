@@ -4,7 +4,7 @@ Group project for 810 Blockchain course
 ### Deployment steps
 * Install Ganache (https://www.trufflesuite.com/ganache)
 * Install npm and nodejs (https://nodejs.org/en/)
-* Install truffle package through CLI 
+* Install truffle package through CLI
 ```bash
 $ npm install -g truffle
 ```
@@ -27,3 +27,9 @@ Summary
 ```
 * Open the Ganache workspace and click on Contracts -> Click on "FileRegistry" (The name of deployed contract). Copy it's address and use it your front-end code.
 
+* Next, start the front-end web appplication
+```bash
+$ npm Install
+
+$ npm start
+```
