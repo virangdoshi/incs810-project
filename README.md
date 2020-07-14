@@ -26,10 +26,10 @@ Summary
 
 ```
 * Open the Ganache workspace and click on Contracts -> Click on "FileRegistry" (The name of deployed contract). Copy it's address and use it your front-end code.
-
+* Install the MetaMask plugin on your browser and setup a wallet. Switch to the local:8545 network and import your account from ganache
 * Next, start the front-end web appplication
 ```bash
-$ npm Install
+$ npm install
 
 $ npm start
 ```
