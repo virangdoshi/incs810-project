@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    const fileRegistryContractAddress = '0x1190f2D95D01cd254Ed89D8dE99A910aCF263A7a';
+    const fileRegistryContractAddress = '0x3ae013325d13765bA7D57af8feC592A1c9857c60';
 
     // List of untrusted source addresses
     const denyList = ["0x2F79f2CAfF75020f3Db1CFDEDff3aa97f3c0CA68", "0x9683DD36a8c373fC7D85A0350FB4e5A77C0663CA"];
